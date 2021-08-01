@@ -3,7 +3,7 @@ import React from 'react';
 var date= ()=> 
 {
   var showdate= new Date();
-  var=displaytodaysdate=showdate.getDate()+'/'+showdate.getMonth()+'/'+showdate.getFullYear();
+  var displaytodaysdate=showdate.getDate()+'/'+showdate.getMonth()+'/'+showdate.getFullYear();
   return(
     <div>
       <input type="text" value= {displaytodaysdate} readOnly="true"/>
