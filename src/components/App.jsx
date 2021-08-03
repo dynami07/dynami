@@ -85,12 +85,13 @@ const handleClick= (theme) => {
 	  />
 	</div>
 
-	<div className='content-box'>
+	<div className="content-box">
 	<h3 Multiple Theme Switcher>
 	<p>
 	djh,fnhjvbfd,vsvhfshskhskggfkuhfyur
 	</p>
 	</div>
+</div>
 </div>
   );
 }
