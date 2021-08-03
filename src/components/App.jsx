@@ -56,7 +56,7 @@ const handleClick= (theme) => {
         </ul>
       </div>
     
-      <div className={`App ${colorTheme}`">
+      <div className={`App ${colorTheme}`>
 	<div className= 'theme-options'>
 
 	  <div id ='theme-white'
