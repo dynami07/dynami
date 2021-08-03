@@ -69,10 +69,6 @@ function App() {
 	</div>
 
 	<div className= 'content-box'>
-	<h3> Multiple Theme Switcher</h3>
-	<p>
-	djh,fnhjvbfd,vsvhfshskhskggfkuhfyur
-	</p>
 	</div>
 
     <div className="container">
