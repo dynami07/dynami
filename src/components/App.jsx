@@ -82,9 +82,9 @@ const handleClick= (theme) => {
 	  <div id ='theme-black'
 		onClick={() => handleClick('theme-black')}
 		className={`${colorTheme === 'theme-black' ? 'active' : ''}`}
-	  />
+	  />	
 	</div>
-</div>
+       </div>
   );
 }
 
