@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ToDoItem from "./ToDoItem";
 import InputArea from "./InputArea";
+export default App;
 
 function App() {
   const [items, setItems] = useState([]);
@@ -94,4 +95,4 @@ function App() {
   );
 }
 
-export default App;
+
