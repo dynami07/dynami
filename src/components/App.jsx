@@ -27,7 +27,7 @@ function App() {
   const handleClick= (theme) => {
 	setColorTheme(theme);
 	localStorage.setItem('theme-color',theme)
-  
+  } 
  
 
   function deleteItem(id) {
