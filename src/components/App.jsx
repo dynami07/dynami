@@ -74,7 +74,7 @@ function App() {
 	djh,fnhjvbfd,vsvhfshskhskggfkuhfyur
 	</p>
 	</div>
-</div>
+
     <div className="container">
       <div className="heading">
         <h1>To-Do List</h1>
@@ -92,7 +92,7 @@ function App() {
           ))}
         </ul>
       </div>
-
+</div>
     </div>
   );
 }
