@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap');
+
+.App{
+	height: 100vh;
+	padding-top: 10px;
+}
+
 body {
   background-color: #ffeaa7;
   min-height: 70vh;
@@ -76,4 +83,13 @@ li {
   text-align: left;
   position: relative;
   padding: 0.5rem;
+}
+
+
+.text-center{
+	text-align: center;
+}
+
+.title{
+	font-size: 20px;
 }
