@@ -59,27 +59,27 @@ function App() {
 
 	  <div id ='theme-white'
 		onClick={() => handleClick('theme-white')}
-		className={`${colorTheme ==== 'theme-white' ? 'active' : ''}`}	  
+		className={`${colorTheme === 'theme-white' ? 'active' : ''}`}	  
 	  />
 	  <div id ='theme-blue'
 		onClick={() => handleClick('theme-blue')}
-	 	className={`${colorTheme ==== 'theme-blue' ? 'active' : ''}`}
+	 	className={`${colorTheme === 'theme-blue' ? 'active' : ''}`}
 	  />
           <div id ='theme-orange'
 		onClick={() => handleClick('theme-orange')}
-		className={`${colorTheme ==== 'theme-orange' ? 'active' : ''}`}
+		className={`${colorTheme === 'theme-orange' ? 'active' : ''}`}
 	  />
           <div id ='theme-purple'
 		onClick={() => handleClick('theme-purple')}
-		className={`${colorTheme ==== 'theme-purple' ? 'active' : ''}`}
+		className={`${colorTheme === 'theme-purple' ? 'active' : ''}`}
 	  />
 	  <div id ='theme-green'
 		onClick={() => handleClick('theme-green')}
-		className={`${colorTheme ==== 'theme-green' ? 'active' : ''}`}
+		className={`${colorTheme === 'theme-green' ? 'active' : ''}`}
 	  />
 	  <div id ='theme-black'
 		onClick={() => handleClick('theme-black')}
-		className={`${colorTheme ==== 'theme-black' ? 'active' : ''}`}
+		className={`${colorTheme === 'theme-black' ? 'active' : ''}`}
 	  />
 	</div>
 
