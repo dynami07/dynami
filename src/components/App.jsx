@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import ToDoItem from "./ToDoItem";
 import InputArea from "./InputArea";
-import'./styles.css';
 import './switcher.scss';
 export default App;
 
