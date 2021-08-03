@@ -7,23 +7,18 @@
 
 body {
 	
-	margin: 0;
-	padding: 0;
-	line-height: 1.6;
-	
-	
-	
-
-  min-height: 70vh;
-  padding: 1rem;
-  box-sizing: border-box;
-  
-	justify-content: center;
-  align-items: center;
-  color: hsl(198, 1%, 29%);
-  font-family: "Architects Daughter", cursive;
-  text-align: center;
-  font-size: 130%;
+	 margin: 0;
+ 	 padding: 0;
+ 	 line-height: 1.6;
+ 	 min-height: 70vh;
+ 	 padding: 1rem;
+         box-sizing: border-box;
+ 	 justify-content: center;
+  	 align-items: center;
+  	 color: hsl(198, 1%, 29%);
+   	 font-family: 'Open Sans', sans-serif;
+ 	 text-align: center;
+  	 font-size: 130%;
 }
 
 .container {
