@@ -38,24 +38,7 @@ function App() {
   }
 
   return (
-    <div className="container">
-      <div className="heading">
-        <h1>To-Do List</h1>
-      </div>
-      <InputArea addItem={addItem} />
-      <div>
-        <ul>
-          {items.map((todoItem, index) => (
-            <ToDoItem
-              key={index}
-              id={index}
-              text={todoItem}
-              onChecked={deleteItem}
-            />
-          ))}
-        </ul>
-      </div>
-
+	  
 <div className={`App ${colorTheme}`}>
 	<div className= 'theme-options'>
 
@@ -92,6 +75,24 @@ function App() {
 	</p>
 	</div>
 </div>
+    <div className="container">
+      <div className="heading">
+        <h1>To-Do List</h1>
+      </div>
+      <InputArea addItem={addItem} />
+      <div>
+        <ul>
+          {items.map((todoItem, index) => (
+            <ToDoItem
+              key={index}
+              id={index}
+              text={todoItem}
+              onChecked={deleteItem}
+            />
+          ))}
+        </ul>
+      </div>
+
     </div>
   );
 }
