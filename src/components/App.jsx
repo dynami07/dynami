@@ -92,10 +92,6 @@ const handleClick= (theme) => {
 	</p>
 	</div>
 </div>
-
-
-
-    </div>
   );
 }
 
