@@ -69,12 +69,10 @@ function App() {
 	</div>
 
 	<div className= 'content-box'>
+	<h3> To-Do List</h3>
 	</div>
 
     <div className="container">
-      <div className="heading">
-        <h1>To-Do List</h1>
-      </div>
       <InputArea addItem={addItem} />
       <div>
         <ul>
