@@ -84,7 +84,6 @@ const handleClick= (theme) => {
 		className={`${colorTheme === 'theme-black' ? 'active' : ''}`}
 	  />	
 	</div>
-  />
   );
 }
 
