@@ -53,7 +53,7 @@ function App() {
           ))}
         </ul>
       </div>
-    </div>
+
 <div className={`App ${colorTheme}`}>
 	<div className= 'theme-options'>
 
@@ -90,6 +90,7 @@ function App() {
 	</p>
 	</div>
 </div>
+    </div>
   );
 }
 
