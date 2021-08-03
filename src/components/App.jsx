@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import ToDoItem from "./ToDoItem";
 import InputArea from "./InputArea";
+import'./styles.css';
+import './switcher.scss';
+export default App;
 
 function App() {
   const [items, setItems] = useState([]);
@@ -93,4 +96,3 @@ function App() {
     </div>
   );
 }
-export default App;
