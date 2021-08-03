@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import ToDoItem from "./ToDoItem";
 import InputArea from "./InputArea";
-export default App;
 
 function App() {
   const [items, setItems] = useState([]);
@@ -94,3 +93,4 @@ function App() {
     </div>
   );
 }
+export default App;
