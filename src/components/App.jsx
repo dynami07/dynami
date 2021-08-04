@@ -2,7 +2,41 @@ import React, { useState, useEffect } from "react";
 import ToDoItem from "./ToDoItem";
 import InputArea from "./InputArea";
 import './switcher.scss';
+
+import counterpart from 'counterpart';
+import Translate from 'react-translate-component';
+import en from './lang/en';
+import de from './lang/de';
+
 export default App;
+
+
+
+counterpart.registerTranslations('en', en);
+counterpart.registerTranslations('de', de);
+counterpart.setLocale('en');
+
+const Link = (props) => {
+  return (
+    <Translate
+      content={props.content}
+      component="a"
+      href="//google.com"
+      target="_blank"
+    />
+  )
+}
+
+class App extends Component {
+
+  state = {
+    lang: 'en'
+  }
+
+  onLangChange = (e) => {
+    this.setState({lang: e.target.value});
+    counterpart.setLocale(e.target.value);
+  }
 
 function App() {
   const [items, setItems] = useState([]);
@@ -67,7 +101,23 @@ function App() {
 		className={`${colorTheme === 'theme-black' ? 'active' : ''}`}
 	  />
 	</div>
+	
+	
+  <div className="App">
 
+        <select value={this.state.lang} onChange={this.onLangChange}>
+          <option value="en">EN</option>
+          <option value="de">DE</option>
+        </select>
+
+        <Translate content="title" component="h1" className="class"/>
+
+        <Translate content="copy.p1" component="p" unsafe={true}/>
+
+        <Translate content="copy.p2" component="p" with={{ link }}/>
+
+        <Translate component="input" type="text" attributes={{placeholder: 'placeholder'}}/>
+</div>
 	<div className= 'content-box'>
 	<h3> To-Do List</h3>
 	</div>
