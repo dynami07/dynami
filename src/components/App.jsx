@@ -77,7 +77,6 @@ function App() {
       <div>
       
         <ul>
-		<li>
           {items.map((todoItem, index) => (
             <ToDoItem
               key={index}
@@ -86,8 +85,7 @@ function App() {
               onChecked={deleteItem}
             />
           ))}
-	  </li>
-        </ul>
+	  </ul>
       
    </div>
 </div>
