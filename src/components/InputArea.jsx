@@ -7,6 +7,8 @@ function InputArea(props) {
     const newValue = event.target.value;
     setInputText(newValue);
   }
+  
+  function ToDoItem(props) {}
 
   return (
     <div className="form">
@@ -19,8 +21,8 @@ function InputArea(props) {
       >
         <span>Add</span>
       </button>
-     <div
-      onClick={() => {
+     
+<div onClick={() => {
         props.onChecked(props.id);
       }}
     >
@@ -33,3 +35,4 @@ function InputArea(props) {
 }
 
 export default InputArea;
+export default ToDoItem;
