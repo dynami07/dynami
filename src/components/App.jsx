@@ -27,7 +27,7 @@ const Link = (props) => {
   )
 }
 
-class App extends Component {
+class Appp extends Component {
 
   state = {
     lang: 'en'
