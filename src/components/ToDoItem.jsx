@@ -8,9 +8,7 @@ function ToDoItem(props) {
       }}
     >
       <li className="centertext">
-        <br>
         {props.text} 
-          </br>
     </li>
     </div>
   );
