@@ -7,7 +7,7 @@ function ToDoItem(props) {
         props.onChecked(props.id);
       }}
     >
-      <li className="centertext">
+      <li>
         {props.text} 
     </li>
     </div>
