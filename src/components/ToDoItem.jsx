@@ -1,4 +1,4 @@
-import React from "react";
+/*import React from "react";
 
 function ToDoItem(props) {
   return (
@@ -15,3 +15,4 @@ function ToDoItem(props) {
 }
 
 export default ToDoItem;
+*/
