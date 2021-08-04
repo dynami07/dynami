@@ -19,6 +19,16 @@ function InputArea(props) {
       >
         <span>Add</span>
       </button>
+<div
+      onClick={() => {
+        props.onChecked(props.id);
+      }}
+    >
+      <li>
+        {props.text} 
+    </li>
+    </div>
+  );
     </div>
   );
 }
