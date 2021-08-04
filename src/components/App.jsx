@@ -75,6 +75,7 @@ function App() {
     <div className="container">
       <InputArea addItem={addItem} />
       <div>
+      <ol>
         <ul>
           {items.map((todoItem, index) => (
             <ToDoItem
@@ -85,7 +86,8 @@ function App() {
             />
           ))}
         </ul>
-      </div>
+      </ol>
+   </div>
 </div>
     </div>
   );
