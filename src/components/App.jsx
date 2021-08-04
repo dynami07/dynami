@@ -27,7 +27,7 @@ const Link = (props) => {
   )
 }
 
-class Appp extends Component {
+class App extends Component {
 
   state = {
     lang: 'en'
@@ -37,7 +37,7 @@ class Appp extends Component {
     this.setState({lang: e.target.value});
     counterpart.setLocale(e.target.value);
   }
-
+}
 function App() {
   const [items, setItems] = useState([]);
 
