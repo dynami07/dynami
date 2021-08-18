@@ -99,11 +99,11 @@ function App() {
               text={todoItem.name}
               onChecked={deleteItem}
             />
-	     <div className= 'todo-btn'>
-                <i className="far fa-edit add-btn" title="Edit item" onClick={() => editItem(elem.id)}></i>
-               </div>
           ))}
 	  </ul>
+	  <div className= 'todo-btn'>
+                <i className="far fa-edit add-btn" title="Edit item" onClick={() => editItem(elem.id)}></i>
+               </div>
       
    </div>
 </div>
