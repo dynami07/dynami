@@ -38,7 +38,7 @@ function App() {
     });
   }
 	
-    /*const editItem = (id) => {
+    const editItem = (id) => {
 
         let newEditItem = items.find((elem) => {
             return elem.id === id;
@@ -50,7 +50,7 @@ function App() {
         setInputData(newEditItem.name);
         setIsEditItem(id);
 
-    }*/
+    }
 
   return (
 	  
@@ -99,11 +99,13 @@ function App() {
               text={todoItem.name}
               onChecked={deleteItem}
             />
+	    
+	    <div className= 'todo-btn'>
+                <i className="far fa-edit add-btn" title="Edit item" onClick={() => editItem(todoItem.name)}></i>
+               </div>
           ))}
 	  </ul>
-	  <div className= 'todo-btn'>
-                <i className="far fa-edit add-btn" title="Edit item" onClick={() => todoItem(todoItem.name)}></i>
-               </div>
+	  
       
    </div>
 </div>
