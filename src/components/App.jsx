@@ -9,7 +9,6 @@ function App() {
 
   function addItem(inputText) {
     setItems(prevItems => {
-	 						   const allInputData = { id: new Date().getTime().toString() , name:inputText}
       return [...prevItems, allInputData];
     });
   }  
@@ -37,21 +36,6 @@ function App() {
       });
     });
   }
-	
-    const editItem = (id) => {
-
-        let newEditItem = items.find((elem) => {
-            return elem.id === id;
-        })
-        console.log(newEditItem.name);
-
-       
-
-        setInputData(newEditItem.name);
-        setIsEditItem(id);
-
-    }
-
   return (
 	  
 <div className={`App ${colorTheme}`}>
@@ -99,13 +83,7 @@ function App() {
               text={todoItem.name}
               onChecked={deleteItem}
             />
-	    
-	
-          ))}
-	      <div className= 'todo-btn'>
-                <i className="far fa-edit add-btn" title="Edit item" onClick={() => editItem(todoItem.name)}></i>
-               </div>
-	      
+	   ))}
 	  </ul>
 	  
       
