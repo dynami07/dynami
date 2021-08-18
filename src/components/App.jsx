@@ -100,10 +100,12 @@ function App() {
               onChecked={deleteItem}
             />
 	    
-	    <div className= 'todo-btn'>
+	
+          ))
+	      <div className= 'todo-btn'>
                 <i className="far fa-edit add-btn" title="Edit item" onClick={() => editItem(todoItem.name)}></i>
                </div>
-          ))}
+	       }
 	  </ul>
 	  
       
