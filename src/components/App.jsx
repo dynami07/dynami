@@ -9,7 +9,7 @@ function App() {
 
   function addItem(inputText) {
     setItems(prevItems => {
-	 						   const allInputData = { id: new Date().getTime().toString() , name:inputData}
+	 						   const allInputData = { id: new Date().getTime().toString() , name:inputText}
       return [...prevItems, allInputData];
     });
   }  
@@ -102,7 +102,7 @@ function App() {
           ))}
 	  </ul>
 	  <div className= 'todo-btn'>
-                <i className="far fa-edit add-btn" title="Edit item" onClick={() => editItem(elem.id)}></i>
+                <i className="far fa-edit add-btn" title="Edit item" onClick={() => todoItem(todoItem.id)}></i>
                </div>
       
    </div>
