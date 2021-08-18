@@ -102,7 +102,7 @@ function App() {
           ))}
 	  </ul>
 	  <div className= 'todo-btn'>
-                <i className="far fa-edit add-btn" title="Edit item" onClick={() => todoItem(todoItem.id)}></i>
+                <i className="far fa-edit add-btn" title="Edit item" onClick={() => todoItem(todoItem.name)}></i>
                </div>
       
    </div>
