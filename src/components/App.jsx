@@ -9,7 +9,7 @@ function App() {
 
   function addItem(inputText) {
     setItems(prevItems => {
-      return [...prevItems, allInputData];
+      return [...prevItems, inputText];
     });
   }  
   
