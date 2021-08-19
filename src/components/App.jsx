@@ -110,8 +110,8 @@ const Radio = ({label, id, handleChange, name, form}) => (
           id="female"
          handleChange={handleChange}  
         />
+      */
       
-      */ 
       <div>
       
         <ul>
