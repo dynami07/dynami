@@ -36,6 +36,23 @@ function App() {
       });
     });
   }
+	
+const Radio = ({label, id, handleChange, name, form}) => (
+  <>
+    <input
+      type="radio"
+      id={id}
+      name={name}
+      onChange={handleChange}
+      value={id}
+      checked={form[name] === id}
+    />
+    <label htmlFor={id}>{label}</label>
+    <br />
+  </>
+);
+
+
   return (
 	  
 <div className={`App ${colorTheme}`}>
@@ -73,6 +90,26 @@ function App() {
 
     <div className="container">
       <InputArea addItem={addItem} />
+      	
+      	 <Radio
+          
+          form={form}
+          name="gender"
+          label="Male"
+          id="male"
+          handleChange={handleChange}
+        />
+	
+      	 <Radio
+          
+          form={form}
+          name="gender"
+          label="Female"
+          id="female"
+          handleChange={handleChange}
+        />
+      
+      
       <div>
       
         <ul>
