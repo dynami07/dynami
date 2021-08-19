@@ -37,6 +37,8 @@ function App() {
     });
   }
 	
+	const name = 'gender';
+	
 const Radio = ({label, id, handleChange, name, form}) => (
   <>
     <input
@@ -94,7 +96,7 @@ const Radio = ({label, id, handleChange, name, form}) => (
       	 <Radio
           
          /* form={form} */
-          name="gender"
+          name={name}
           label="Male"
           id="male"
        /*   handleChange={handleChange}*/
@@ -103,7 +105,7 @@ const Radio = ({label, id, handleChange, name, form}) => (
       	 <Radio
           
         /*  form={form}  */
-          name="gender"
+          name={name}
           label="Female"
           id="female"
         /*  handleChange={handleChange}   */
