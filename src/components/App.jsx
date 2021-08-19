@@ -92,26 +92,6 @@ const Radio = ({label, id, handleChange, name, form}) => (
 
     <div className="container">
       <InputArea addItem={addItem} />
-      	
-     /* 	 <Radio
-          
-          form={form} 
-          name={name}
-          label="Male"
-          id="male"
-          handleChange={handleChange}
-        />
-	
-      	 <Radio
-          
-          form={form}  
-          name={name}
-          label="Female"
-          id="female"
-         handleChange={handleChange}  
-        />
-      */
-      
       <div>
       
         <ul>
