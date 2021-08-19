@@ -95,20 +95,20 @@ const Radio = ({label, id, handleChange, name, form}) => (
       	
      /* 	 <Radio
           
-         /* form={form} */
+          form={form} 
           name={name}
           label="Male"
           id="male"
-       /*   handleChange={handleChange}*/
+          handleChange={handleChange}
         />
 	
       	 <Radio
           
-        /*  form={form}  */
+          form={form}  
           name={name}
           label="Female"
           id="female"
-        /*  handleChange={handleChange}   */
+         handleChange={handleChange}  
         />
       
       */ 
