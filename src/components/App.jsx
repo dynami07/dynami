@@ -37,7 +37,7 @@ function App() {
     });
   }
 	
-	const name = 'gender';
+	/* const name = 'gender';
 	
 const Radio = ({label, id, handleChange, name, form}) => (
   <>
@@ -52,9 +52,9 @@ const Radio = ({label, id, handleChange, name, form}) => (
     <label htmlFor={id}>{label}</label>
     <br />
   </>
-);
+); 
 
-
+*/
   return (
 	  
 <div className={`App ${colorTheme}`}>
@@ -93,7 +93,7 @@ const Radio = ({label, id, handleChange, name, form}) => (
     <div className="container">
       <InputArea addItem={addItem} />
       	
-      	 <Radio
+     /* 	 <Radio
           
          /* form={form} */
           name={name}
@@ -111,7 +111,7 @@ const Radio = ({label, id, handleChange, name, form}) => (
         /*  handleChange={handleChange}   */
         />
       
-      
+      */ 
       <div>
       
         <ul>
