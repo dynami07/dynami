@@ -88,7 +88,7 @@ const [displaygender,setgender]=useState();
 			))}
 			<h2> {displaygender} </h2>
 			</center>
-			</div>
+	</div>
       
       <div>
       
@@ -101,9 +101,7 @@ const [displaygender,setgender]=useState();
               onChecked={deleteItem}
             />
 	   ))}
-	  </ul>
-	  
-      {displaygender}
+	  </ul> 
    </div>
 </div>
     </div>
