@@ -9,7 +9,7 @@ function ToDoItem(props) {
     >
       <li>
         {props.text}                                               
-       <p style={{font-size:"1rem"}}>{props.display}</p>
+       <h5 className="dipslay">{props.display}</h5>
     </li>
     </div>
   );
