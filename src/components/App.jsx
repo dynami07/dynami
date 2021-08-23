@@ -86,7 +86,6 @@ const [displayGender,setGender]=useState([]);
 			<b> {result} </b>
 			</>
 			))}
-			/*<h1 style={{color:"red"}}>{displayGender}</h1>*/
 			</center>
 	</div>
       
@@ -98,7 +97,7 @@ const [displayGender,setGender]=useState([]);
               key={index}
               id={index}
               text={todoItem}
-	      text={displayGender}
+	      display={displayGender}
               onChecked={deleteItem}
             />
 	   ))}
