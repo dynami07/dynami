@@ -8,7 +8,7 @@ function ToDoItem(props) {
       }}
     >
       <li>
-        {props.text} {'                                                              '} {props.display}
+        {props.text} :<a style={{ marginLeft: '.5rem' }} {props.display} </a>
     </li>
     </div>
   );
