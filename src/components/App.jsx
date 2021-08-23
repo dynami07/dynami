@@ -5,13 +5,13 @@ import './switcher.scss';
 export default App;
 
 function App() {
-  const [items, setItems] = useState([]);
+const [items, setItems] = useState([]);
 
-  function addItem(inputText) {
-    setItems(prevItems => {
-      return [...prevItems, inputText];
-    });
-  }  
+function addItem(inputText) {
+setItems(prevItems => {
+  return [...prevItems, inputText];
+  });
+ }  
   
   const [ colorTheme, setColorTheme]= useState('theme-white');
 
@@ -19,7 +19,7 @@ function App() {
 	const currentThemeColor = localStorage.getItem('theme-color');
 	if(currentThemeColor)
 	{
-	   setColorTheme(currentThemeColor);
+	  setColorTheme(currentThemeColor);
 	}
 }, []);
 
@@ -102,8 +102,8 @@ const [displayGender,setGender]=useState();
             />
 	   ))}
 	  </ul> 
-   </div>
+      </div>
+     </div>
 </div>
-    </div>
   );
 }
