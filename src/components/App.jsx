@@ -38,7 +38,7 @@ function App() {
   }
 	
 let gender=["Male","Female"];
-const [displayGender,setGender]=useState([]);
+const [displayGender,setGender]=useState();
 	
   return (
 	  
