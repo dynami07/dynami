@@ -86,7 +86,7 @@ const [displaygender,setgender]=useState();
 			<b> {result} </b>
 			</>
 			))}
-			<h1>{displaygender}</h1>
+			<h1 style={{color:"red"}}>{displaygender}</h1>
 			</center>
 	</div>
       
