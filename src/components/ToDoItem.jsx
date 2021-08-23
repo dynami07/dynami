@@ -8,8 +8,7 @@ function ToDoItem(props) {
       }}
     >
       <li>
-        {props.text}                                               
-       <h5 className="dipslay">{props.display}</h5>
+        {props.text} <p className="dipslay">{props.display}</p>
     </li>
     </div>
   );
