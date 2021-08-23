@@ -38,7 +38,7 @@ function App() {
   }
 	
 let gender=["Male","Female"];
-const [displayGender,setGender]=useState();
+const [displayGender,setGender]=useState([]);
 	
   return (
 	  
@@ -86,7 +86,7 @@ const [displayGender,setGender]=useState();
 			<b> {result} </b>
 			</>
 			))}
-			<h1 style={{color:"red"}}>{displayGender}</h1>
+			/*<h1 style={{color:"red"}}>{displayGender}</h1>*/
 			</center>
 	</div>
       
@@ -98,6 +98,7 @@ const [displayGender,setGender]=useState();
               key={index}
               id={index}
               text={todoItem}
+	      text={displayGender}
               onChecked={deleteItem}
             />
 	   ))}
