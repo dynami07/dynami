@@ -38,7 +38,7 @@ function App() {
   }
 	
 let gender=["Male","Female"];
-const [displaygender,setgender]=useState();
+const [displayGender,setGender]=useState();
 	
   return (
 	  
@@ -82,11 +82,11 @@ const [displaygender,setgender]=useState();
 		<center>
 		{gender.map(result=>(
 			<>
-			<input type="radio" value={result} name="radiovalues" onchange={(e)=>setgender(e.target.value)}/>
+			<input type="radio" value={result} name="radiovalues" onchange={(e)=>setGender(e.target.value)}/>
 			<b> {result} </b>
 			</>
 			))}
-			<h1 style={{color:"red"}}>{displaygender}</h1>
+			<h1 style={{color:"red"}}>{displayGender}</h1>
 			</center>
 	</div>
       
