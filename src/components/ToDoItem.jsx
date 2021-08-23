@@ -9,7 +9,8 @@ function ToDoItem(props) {
     >
       <li>
         {props.text}
-        {props.display}
+         
+        <h4>{props.display}</h4>
     </li>
     </div>
   );
