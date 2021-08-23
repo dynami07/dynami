@@ -9,7 +9,7 @@ function ToDoItem(props) {
     >
       <li>
         {props.text} 
-        <bold style={{font-size: '70%'}}> {props.display} </bold>
+        <bold className="display"> {props.display} </bold>
     </li>
     </div>
   );
