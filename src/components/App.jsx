@@ -37,24 +37,9 @@ function App() {
     });
   }
 	
-	/* const name = 'gender';
+let gender=["Male","Female"];
+const [displaygender,setgender]=usestate("Male");
 	
-const Radio = ({label, id, handleChange, name, form}) => (
-  <>
-    <input
-      type="radio"
-      id={id}
-      name={name}
-      onChange={handleChange}
-      value={id}
-      checked={form[name] === id}
-    />
-    <label htmlFor={id}>{label}</label>
-    <br />
-  </>
-); 
-
-*/
   return (
 	  
 <div className={`App ${colorTheme}`}>
@@ -92,6 +77,20 @@ const Radio = ({label, id, handleChange, name, form}) => (
 
     <div className="container">
       <InputArea addItem={addItem} />
+      
+      	<div>
+		<center>
+		{gender.map(result=>(
+			<>
+			<input type="radio" value={result} name="radiovalues" checked={displaygender===result} onchange={(e)=>setgender(e.target.value)}/>
+			<b> {result} </b>
+			</>
+			))}
+			<h2> {displaygender} </h2>
+			</center>
+			</div>
+		}
+      
       <div>
       
         <ul>
