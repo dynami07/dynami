@@ -97,8 +97,7 @@ const [displayGender,setGender]=useState([]);
               key={index}
               id={index}
               text={todoItem}
-	      display={displayGender}
-              onChecked={deleteItem}
+	      onChecked={deleteItem}
             />
 	   ))}
 	  </ul> 
