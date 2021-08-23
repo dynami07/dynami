@@ -98,13 +98,12 @@ const [displaygender,setgender]=useState();
               key={index}
               id={index}
               text={todoItem}
-	      {displaygender}
               onChecked={deleteItem}
             />
 	   ))}
 	  </ul>
 	  
-      
+      {displaygender}
    </div>
 </div>
     </div>
