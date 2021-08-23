@@ -8,9 +8,7 @@ function ToDoItem(props) {
       }}
     >
       <li>
-        {props.text}
-         
-        <h4>{props.display}</h4>
+        {props.text}                                               {props.display}
     </li>
     </div>
   );
