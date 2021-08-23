@@ -97,6 +97,8 @@ li {
 }
 
 .display{
-	font-family: "Architects Daughter", cursive;
-  font-size: 20px;
+	display: -webkit-inline-box;
+  text-align: left;
+  position: relative;
+  padding: 0.5rem;
 }
