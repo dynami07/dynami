@@ -39,7 +39,8 @@ setItems(prevItems => {
 	
 let gender=["Male","Female"];
 const [displayGender,setGender]=useState("");
-	setGender(newValue);
+	const newValuee = event.target.value;
+	setGender(newValuee);
 const [displayGenderr,setGenderr]=useState();
 		
   return (
