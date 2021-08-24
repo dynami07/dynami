@@ -38,10 +38,7 @@ setItems(prevItems => {
   }
 	
 let gender=["Male","Female"];
-const [displayGender,setGender]=useState("");
-	function handleChangee(event) {
-		const newValuee = event.target.value;
-	setGender(newValuee);}
+const [displayGender,setGender]=useState();
 const [displayGenderr,setGenderr]=useState();
 		
   return (
@@ -86,9 +83,8 @@ const [displayGenderr,setGenderr]=useState();
 		<center>
 		{gender.map(result=>(
 			<>
-			<input type="radio" value={result} name="radiovalues" onChange={(e)=>setGender(e.target.value)} onChangee={handleChangee}/>
+			<input type="radio" value={result} name="radiovalues" onChange={(e)=>setGender(e.target.value)} />
 			<b> {result} </b>
-			setGender("");
 			</>
 			))}
 			</center>
