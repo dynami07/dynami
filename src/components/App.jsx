@@ -95,9 +95,9 @@ const [displayGenderr,setGenderr]=useState();
         <label>
           Gender: &nbsp;	  
           <select  onChange={(e)=>setGenderr(e.target.value)}>
-	    <option value="Gender">Select</option>
-            <option value="Gender">Male</option>
-            <option value="Gender">Female</option>
+	    <option value="Select Gender">Select</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
           </select>
         </label>
    
