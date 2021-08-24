@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import ToDoItem from "./ToDoItem";
 import InputArea from "./InputArea";
 import './switcher.scss';
+import Select from 'react-select';
 export default App;
 
 function App() {
@@ -39,6 +40,25 @@ setItems(prevItems => {
 	
 let gender=["Male","Female"];
 const [displayGender,setGender]=useState();
+	
+function Genderddl()
+{
+	var genderlist= [
+		{
+			value:1,
+			label:"Male"
+		},
+		{
+			value:2,
+			label:"Female"
+		}
+		];
+}
+	const [result,ddlvalue]=useState(genderlist.label);
+	const ddlHandler = e =>
+	{
+	ddlvalue(e.label);
+	}
 	
   return (
 	  
@@ -87,6 +107,13 @@ const [displayGender,setGender]=useState();
 			</>
 			))}
 			</center>
+	</div>
+	
+	<div>
+		<Select options={genderlist} onChange={ddlHandler}/>
+		<center>
+		<h3> {result} </h3>
+		</center>			
 	</div>
       
       <div>
