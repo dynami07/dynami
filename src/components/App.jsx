@@ -40,7 +40,7 @@ setItems(prevItems => {
 let gender=["Male","Female"];
 const [displayGender,setGender]=useState();
 	
-
+const [displayGenderr,setGenderr]=useState();
 		
   return (
 	  
@@ -96,8 +96,8 @@ const [displayGender,setGender]=useState();
           Gender: &nbsp;	  
           <select>
 	    <option value="Gender">Select</option>
-            <option value="Gender">Male</option>
-            <option value="Gender">Female</option>
+            <option value="Gender" onChange={(e)=>setGenderr(e.target.value)}>Male</option>
+            <option value="Gender" onChange={(e)=>setGenderr(e.target.value)}>Female</option>
           </select>
         </label>
    
@@ -112,6 +112,7 @@ const [displayGender,setGender]=useState();
               id={index}
               text={todoItem}
 	      display={displayGender}
+	      show={isplayGenderr}
 	      onChecked={deleteItem}
             />
 	   ))}
