@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import ToDoItem from "./ToDoItem";
 import InputArea from "./InputArea";
 import './switcher.scss';
-import Select from '././react-select';
+import Select from '../react-select';
 export default App;
 
 function App() {
