@@ -95,6 +95,7 @@ const [displayGender,setGender]=useState();
         <label>
           Gender:
           <select>
+	    <option value="Gender">Select</option>
             <option value="Gender">Male</option>
             <option value="Gender">Female</option>
           </select>
