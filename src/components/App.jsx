@@ -94,13 +94,15 @@ const [displayGender,setGender]=useState();
 	<form>
         <label>
           Gender:
+	  
+	  
           <select>
 	    <option value="Gender">Select</option>
             <option value="Gender">Male</option>
             <option value="Gender">Female</option>
           </select>
         </label>
-        <input type="submit" value="Submit" />
+      /*  <input type="submit" value="Submit" /> */
       </form>   
       
       <div>
