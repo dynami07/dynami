@@ -86,7 +86,7 @@ const [displayGenderr,setGenderr]=useState();
 		<center>
 		{gender.map(result=>(
 			<>
-			<input type="radio" value={result} name="radiovalues" onChange={(e)=>setGender(e.target.value)} onChangee={handleChange}/>
+			<input type="radio" value={result} name="radiovalues" onChange={(e)=>setGender(e.target.value)} onChangee={handleChangee}/>
 			<b> {result} </b>
 			setGender("");
 			</>
