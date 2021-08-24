@@ -93,12 +93,10 @@ const [displayGender,setGender]=useState();
 	
 	<form>
         <label>
-          Pick your favorite flavor:
+          Gender:
           <select>
-            <option value="grapefruit">Grapefruit</option>
-            <option value="lime">Lime</option>
-            <option value="coconut">Coconut</option>
-            <option value="mango">Mango</option>
+            <option value="Gender">Male</option>
+            <option value="Gender">Female</option>
           </select>
         </label>
         <input type="submit" value="Submit" />
