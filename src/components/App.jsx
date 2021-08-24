@@ -39,7 +39,7 @@ setItems(prevItems => {
 	
 let gender=["Male","Female"];
 const [displayGender,setGender]=useState();
-	
+	setdisplayGender(newValue);
 const [displayGenderr,setGenderr]=useState();
 		
   return (
@@ -86,6 +86,7 @@ const [displayGenderr,setGenderr]=useState();
 			<>
 			<input type="radio" value={result} name="radiovalues" checked={displayGender===result} onChange={(e)=>setGender(e.target.value)}/>
 			<b> {result} </b>
+			setdisplayGender("");
 			</>
 			))}
 			</center>
