@@ -93,9 +93,7 @@ const [displayGender,setGender]=useState();
 	
 	<form>
         <label>
-          Gender:
-	  
-	  
+          Gender: &nbsp;	  
           <select>
 	    <option value="Gender">Select</option>
             <option value="Gender">Male</option>
