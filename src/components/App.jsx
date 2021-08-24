@@ -102,7 +102,7 @@ const [displayGender,setGender]=useState();
             <option value="Gender">Female</option>
           </select>
         </label>
-      /*  <input type="submit" value="Submit" /> */
+   
       </form>   
       
       <div>
