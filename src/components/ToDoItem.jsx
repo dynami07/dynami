@@ -10,6 +10,7 @@ function ToDoItem(props) {
       <li>
         {props.text} 
         <bold className="display"> {props.display} </bold>
+        {props.show}
     </li>
     </div>
   );
