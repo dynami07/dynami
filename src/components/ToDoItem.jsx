@@ -9,8 +9,8 @@ function ToDoItem(props) {
     >
       <li>
         {props.text} 
-        <bold className="display"> {props.display} {props.show} </bold>
-        
+        <bold className="display"> {props.display}  </bold>
+        {props.show}
     </li>
     </div>
   );
