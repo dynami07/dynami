@@ -112,7 +112,7 @@ const [displayGenderr,setGenderr]=useState();
               id={index}
               text={todoItem}
 	      display={displayGender}
-	      show={isplayGenderr}
+	      show={displayGenderr}
 	      onChecked={deleteItem}
             />
 	   ))}
