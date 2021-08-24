@@ -57,10 +57,10 @@ const [displayGender,setGender]=useState();
     alert('Your favorite flavor is: ' + this.state.value);
     event.preventDefault();
   }
-	
+	}	
   return (
 	  
-<div className={`App ${colorTheme}`}>
+	<div className={`App ${colorTheme}`}>
 	<div className= 'theme-options'>
 
 	  <div id ='theme-white'
