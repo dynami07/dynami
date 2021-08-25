@@ -140,7 +140,7 @@ const [displayGenderr,setGenderr]=useState();
             <ToDoItem
               key={index}
               id={index}
-	      shows={InputGender}
+	      shows={genders}
               
             />
 	   ))}
