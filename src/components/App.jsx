@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ToDoItem from "./ToDoItem";
 import InputArea from "./InputArea";
+import InputGender from "./InputGender"
 import './switcher.scss';
 export default App;
 
@@ -13,6 +14,21 @@ setItems(prevItems => {
   });
  }  
   
+
+let gender=["Male","Female"];
+const [displayGender,setGender]=useState();
+const [displayGenderr,setGenderr]=useState();
+	
+	const [genders,setGenders]= usestate([]);
+	function addgender(inputgender){
+	setgender(prevGender => {
+		return [...prevGenders, inputgender];
+	});
+}
+	
+	
+	
+	
   const [ colorTheme, setColorTheme]= useState('theme-white');
 
   useEffect(() => {
@@ -37,9 +53,7 @@ setItems(prevItems => {
     });
   }
 	
-let gender=["Male","Female"];
-const [displayGender,setGender]=useState();
-const [displayGenderr,setGenderr]=useState();
+
 		
   return (
 	  
@@ -78,6 +92,7 @@ const [displayGenderr,setGenderr]=useState();
 
     <div className="container">
       <InputArea addItem={addItem} />
+      <InputGender addGender={addGender} />
       
       	<div>
 		<center>
