@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ToDoItem from "./ToDoItem";
 import InputArea from "./InputArea";
-import InputGender from "./InputGender";
 import './switcher.scss';
 export default App;
 
@@ -13,10 +12,8 @@ setItems(prevItems => {
   return [...prevItems, inputText];
   });
  }  
-	
-	const [gender, setGender] = useState([]);
 
-const [ colorTheme, setColorTheme]= useState('theme-white');
+	const [ colorTheme, setColorTheme]= useState('theme-white');
 
   useEffect(() => {
 	const currentThemeColor = localStorage.getItem('theme-color');
@@ -40,6 +37,9 @@ const [ colorTheme, setColorTheme]= useState('theme-white');
     });
   }
 	
+	let gender=["Male","Female"];
+const [displayGender,setGender]=useState();
+
 
 	return (
 	  
@@ -78,8 +78,17 @@ const [ colorTheme, setColorTheme]= useState('theme-white');
 
     <div className="container">
       <InputArea addItem={addItem} />
-      <InputGender/>
       
+        	<div>
+		<center>
+		{gender.map(result=>(
+			<>
+			<input type="radio" value={result} name="radiovalues" onChange={(e)=>setGender(e.target.value)}/>
+			<b> {result} </b>
+			</>
+			))}
+			</center>
+	</div>
       
       <div>
          <ul>
@@ -87,6 +96,7 @@ const [ colorTheme, setColorTheme]= useState('theme-white');
             <ToDoItem
               key={index}
               id={index}
+	      display={displayGender}
               text={todoItem}
 	      onChecked={deleteItem}
             />
