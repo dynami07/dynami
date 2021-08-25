@@ -13,7 +13,7 @@ function InputGender(props) {
 		<center>
 		{inputGender.map(result=>(
 			<>
-			<input type="radio" value={inputGender} name="radiovalues"  onChange={handleChange} />
+			<input type="radio" value={result} name="radiovalues"  onChange={handleChange} />
 			<b> {result} </b>
 			</>
 			))}
