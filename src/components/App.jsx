@@ -86,14 +86,14 @@ return (
       <div>
    <form>
 <fieldset id="group1">
-<input type="radio" value="value1" name="group1" onChange={this.handleChangea}>
-<input type="radio" value="value2" name="group1" onChange={this.handleChangea}>
+<input type="radio" value="value1" name="group1" onChange={this.handleChangea}/>
+<input type="radio" value="value2" name="group1" onChange={this.handleChangea}/>
 </fieldset>
 
 <fieldset id="group2">
-<input type="radio" value="value1" name="group2" onChange={this.handleChangeb}>
-<input type="radio" value="value2" name="group2" onChange={this.handleChangeb}>
-<input type="radio" value="value3" name="group2" onChange={this.handleChangeb}>
+<input type="radio" value="value1" name="group2" onChange={this.handleChangeb}/>
+<input type="radio" value="value2" name="group2" onChange={this.handleChangeb}/>
+<input type="radio" value="value3" name="group2" onChange={this.handleChangeb}/>
 </fieldset>
 </form>
       </div>
