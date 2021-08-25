@@ -1,4 +1,4 @@
-import React from "react";
+ import React from "react";
 
 function ToDoItem(props) {
   return (
@@ -9,8 +9,7 @@ function ToDoItem(props) {
     >
       <li>
         {props.text} 
-        <bold className="display"> {props.display}  {props.show} </bold>   
-    </li>
+       </li>
     </div>
   );
 }
