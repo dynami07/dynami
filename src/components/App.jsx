@@ -13,6 +13,8 @@ setItems(prevItems => {
   return [...prevItems, inputText];
   });
  }  
+	
+	const [gender, setGender] = useState([]);
 
 const [ colorTheme, setColorTheme]= useState('theme-white');
 
