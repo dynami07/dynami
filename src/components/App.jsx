@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ToDoItem from "./ToDoItem";
 import InputArea from "./InputArea";
-import InputGender from "./InputGender"
 import './switcher.scss';
 export default App;
 
@@ -17,15 +16,7 @@ setItems(prevItems => {
 
 let gender=["Male","Female"];
 const [displayGender,setGender]=useState();
-const [displayGenderr,setGenderr]=useState();
-	
-	const [genders, setGenders] = useState([]);
-	function addGender(inputGender){
-	setGenders(prevGenders => {
-		return [...prevGenders, inputGender];
-	});
-}
-	
+const [displayGenderr,setGenderr]=useState();	
 	
 	
 	
@@ -92,8 +83,7 @@ const [displayGenderr,setGenderr]=useState();
 
     <div className="container">
       <InputArea addItem={addItem} />
-      <InputGender addGender={addGender} />
-      
+       
       	<div>
 		<center>
 		{gender.map(result=>(
@@ -134,20 +124,7 @@ const [displayGenderr,setGenderr]=useState();
       </div>
       
        <div>
-      
-        <ul>
-          {genders.map((todoItem, index) => (
-            <ToDoItem
-              key={index}
-              id={index}
-	      shows={genders}
-              
-            />
-	   ))}
-	  </ul> 
-      </div>
-      
-      
+     
      </div>
 </div>
   );
