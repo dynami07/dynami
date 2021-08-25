@@ -7,7 +7,6 @@ function InputGender(props) {
     const newValue = event.target.value;
     setInputGender(newValue);
   }
-  let inputGender=["Male","Female"];
   
   return (
 	<div>
