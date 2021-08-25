@@ -36,7 +36,7 @@ const [ colorTheme, setColorTheme]= useState('theme-white');
       });
     });
   }
-const[value, setValue] = useState();	
+	
 
 	return (
 	  
@@ -76,18 +76,6 @@ const[value, setValue] = useState();
     <div className="container">
       <InputArea addItem={addItem} />
       
-      <div>
-	<div>
-	<input type="radio" id="heuy" name="drone" value="heuy" onChange={(e) => setValue(e.target.value)} />
-	<label for="heuy"> heuy </label>
-	</div>
-	
-	<div>
-	<input type="radio" id="drewey" name="drone" value="drewey" onChange={(e) => setValue(e.target.value)} />
-	<label for="drewey"> drewey </label>
-	</div>
-	{value==="heuy"?(<h1>Heuy</h1>):value==="drewey"?(<h1>Drewey</h1>):null}	
-	</div>
       
       <div>
          <ul>
