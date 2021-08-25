@@ -7,14 +7,14 @@ function InputGender(props) {
     const newValue = event.target.value;
     setInputGender(newValue);
   }
-  let gender=["Male","Female"];
+  let inputGender=["Male","Female"];
   
   return (
 	<div>
 		<center>
-		{gender.map(result=>(
+		{inputGender.map(result=>(
 			<>
-			<input type="radio" value={result} name="radiovalues"  onChange={handleChange} />
+			<input type="radio" value={inputGender} name="radiovalues"  onChange={handleChange} />
 			<b> {result} </b>
 			</>
 			))}
