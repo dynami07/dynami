@@ -36,12 +36,9 @@ const [ colorTheme, setColorTheme]= useState('theme-white');
       });
     });
   }
+const[value, setValue] = useState();	
 
-const Radio = () => {
-	const[value, setValue] = React.useState("");
-}
-	
-return (
+	return (
 	  
 	<div className={`App ${colorTheme}`}>
 	<div className= 'theme-options'>
