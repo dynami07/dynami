@@ -36,6 +36,14 @@ const [ colorTheme, setColorTheme]= useState('theme-white');
       });
     });
   }
+
+	handleChange=(event)=> {
+    console.log(event.target.value);
+    this.setState({
+      selectedoptionId : event.target.value
+    })
+    tempobj["optionId"] = event.target.value
+  };
 	
 return (
 	  
@@ -74,10 +82,24 @@ return (
 
     <div className="container">
       <InputArea addItem={addItem} />
-        
-      <div>
       
-        <ul>
+      <div>
+   <form>
+<fieldset id="group1">
+<input type="radio" value="value1" name="group1" onChange={this.handleChangea}>
+<input type="radio" value="value2" name="group1" onChange={this.handleChangea}>
+</fieldset>
+
+<fieldset id="group2">
+<input type="radio" value="value1" name="group2" onChange={this.handleChangeb}>
+<input type="radio" value="value2" name="group2" onChange={this.handleChangeb}>
+<input type="radio" value="value3" name="group2" onChange={this.handleChangeb}>
+</fieldset>
+</form>
+      </div>
+      
+      <div>
+         <ul>
           {items.map((todoItem, index) => (
             <ToDoItem
               key={index}
