@@ -20,9 +20,9 @@ const [displayGender,setGender]=useState();
 const [displayGenderr,setGenderr]=useState();
 	
 	const [genders, setGenders] = useState([]);
-	function addgender(inputgender){
+	function addGender(inputGender){
 	setGenders(prevGenders => {
-		return [...prevGenders, inputgender];
+		return [...prevGenders, inputGender];
 	});
 }
 	
