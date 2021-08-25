@@ -12,15 +12,8 @@ setItems(prevItems => {
   return [...prevItems, inputText];
   });
  }  
-  
 
-let gender=["Male","Female"];
-const [displayGender,setGender]=useState();
-const [displayGenderr,setGenderr]=useState();	
-	
-	
-	
-  const [ colorTheme, setColorTheme]= useState('theme-white');
+const [ colorTheme, setColorTheme]= useState('theme-white');
 
   useEffect(() => {
 	const currentThemeColor = localStorage.getItem('theme-color');
@@ -44,9 +37,7 @@ const [displayGenderr,setGenderr]=useState();
     });
   }
 	
-
-		
-  return (
+return (
 	  
 	<div className={`App ${colorTheme}`}>
 	<div className= 'theme-options'>
@@ -83,29 +74,7 @@ const [displayGenderr,setGenderr]=useState();
 
     <div className="container">
       <InputArea addItem={addItem} />
-       
-      	<div>
-		<center>
-		{gender.map(displayGender=>(
-			<>
-			<input type="radio" value={displayGender} name="radiovalues" onChange={(e)=>setGender(e.target.value)} />
-			<b> {displayGender} </b>
-			</>
-			))}
-			</center>
-	</div>
-<div>	
-	<form>
-        <label>
-          Gender: &nbsp;	  
-          <select  onChange={(e)=>setGenderr(e.target.value)}>
-	    <option value="">Select</option>
-            <option value="Male">Male</option>
-            <option value="Female">Female</option>
-          </select>
-        </label>
-   </form>   
-</div>      
+        
       <div>
       
         <ul>
@@ -114,8 +83,6 @@ const [displayGenderr,setGenderr]=useState();
               key={index}
               id={index}
               text={todoItem}
-	      display={displayGender}
-	      show={displayGenderr}
 	      onChecked={deleteItem}
             />
 	   ))}
