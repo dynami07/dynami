@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ToDoItem from "./ToDoItem";
 import InputArea from "./InputArea";
+import InputGender from "./InputGender";
 import './switcher.scss';
 export default App;
 
@@ -75,6 +76,7 @@ const [ colorTheme, setColorTheme]= useState('theme-white');
 
     <div className="container">
       <InputArea addItem={addItem} />
+      <InputGender/>
       
       
       <div>
