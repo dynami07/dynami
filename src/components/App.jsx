@@ -94,17 +94,17 @@ const [displayGenderr,setGenderr]=useState();
 			))}
 			</center>
 	</div>
-	
+<div>	
 	<form>
         <label>
           Gender: &nbsp;	  
           <select  onChange={(e)=>setGenderr(e.target.value)}>
-	    <option value="Select Gender">Select</option>
+	    <option value="">Select</option>
             <option value="Male">Male</option>
             <option value="Female">Female</option>
           </select>
         </label>
-   
+</div>
       </form>   
       
       <div>
