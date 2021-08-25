@@ -19,9 +19,9 @@ let gender=["Male","Female"];
 const [displayGender,setGender]=useState();
 const [displayGenderr,setGenderr]=useState();
 	
-	const [genders,setGenders]= usestate([]);
+	const [genders, setGenders] = usestate([]);
 	function addgender(inputgender){
-	setgender(prevGender => {
+	setgender(prevGenders => {
 		return [...prevGenders, inputgender];
 	});
 }
@@ -132,6 +132,22 @@ const [displayGenderr,setGenderr]=useState();
 	   ))}
 	  </ul> 
       </div>
+      
+       <div>
+      
+        <ul>
+          {genders.map((todoItem, index) => (
+            <ToDoItem
+              key={index}
+              id={index}
+	      shows={InputGender}
+              
+            />
+	   ))}
+	  </ul> 
+      </div>
+      
+      
      </div>
 </div>
   );
