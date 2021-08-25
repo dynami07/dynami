@@ -37,8 +37,7 @@ const [ colorTheme, setColorTheme]= useState('theme-white');
     });
   }
 
-function handleChange=(event)=> {
-    console.log(event.target.value);
+function handleChange= (event) => {
     this.setState({
       selectedoptionId : event.target.value
     })
