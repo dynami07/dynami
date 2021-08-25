@@ -104,9 +104,8 @@ const [displayGenderr,setGenderr]=useState();
             <option value="Female">Female</option>
           </select>
         </label>
-</div>
-      </form>   
-      
+   </form>   
+</div>      
       <div>
       
         <ul>
