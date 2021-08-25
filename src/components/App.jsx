@@ -123,8 +123,7 @@ const [displayGenderr,setGenderr]=useState();
 	  </ul> 
       </div>
       
-       <div>
-     
+   
      </div>
 </div>
   );
