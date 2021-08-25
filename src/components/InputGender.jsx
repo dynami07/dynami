@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 function InputGender(props) {
-  const [inputGender, setGender] = useState("");
+  const [inputGender, setInputGender] = useState("");
 
   function handleChange(event) {
     const newValue = event.target.value;
