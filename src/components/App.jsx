@@ -37,12 +37,9 @@ const [ colorTheme, setColorTheme]= useState('theme-white');
     });
   }
 
-function handleChange= (event) => {
-    this.setState({
-      selectedoptionId : event.target.value
-    })
-    tempobj["optionId"] = event.target.value
-  };
+const Radio = () => {
+	const[value, setValue] = useState("");
+}
 	
 return (
 	  
@@ -83,19 +80,17 @@ return (
       <InputArea addItem={addItem} />
       
       <div>
-   <form>
-<fieldset id="group1">
-<input type="radio" value="value1" name="group1" onChange={this.handleChangea}/>
-<input type="radio" value="value2" name="group1" onChange={this.handleChangea}/>
-</fieldset>
-
-<fieldset id="group2">
-<input type="radio" value="value1" name="group2" onChange={this.handleChangeb}/>
-<input type="radio" value="value2" name="group2" onChange={this.handleChangeb}/>
-<input type="radio" value="value3" name="group2" onChange={this.handleChangeb}/>
-</fieldset>
-</form>
-      </div>
+	<div>
+	<input type="radio" id="heuy" name="drone" value="heuy" onChange={(e) => setValue(e.target.value)} />
+	<label for="heuy"> heuy </label>
+	</div>
+	
+	<div>
+	<input type="radio" id="drewey" name="drone" value="drewey" onChange={(e) => setValue(e.target.value)} />
+	<label for="drewey"> drewey </label>
+	</div>
+	{value==="heuy"?(<h1>Heuy</h1>):value==="drewey"?(<h1>Drewey</h1>):null}	
+	</div>
       
       <div>
          <ul>
