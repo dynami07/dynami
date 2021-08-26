@@ -37,8 +37,7 @@ setItems(prevItems => {
     });
   }
 	
-	let gender=["Male","Female"];
-const [displayGender,setGender]=useState();
+
 
 
 	return (
@@ -79,21 +78,11 @@ const [displayGender,setGender]=useState();
     <div className="container">
       <InputArea addItem={addItem} />
       
-        	<div>
-		<center>
-		{gender.map(result=>(
-			<>
-			<input type="radio" value={result} name="radiovalues" onChange={(e)=>setGender(e.target.value)}/>
-			<b> {result} </b>
-			</>
-			))}
-			</center>
-	</div>
-      
+             
       <div>
          <ul>
           {items.map((todoItem, index) => (
-            <ToDoItem
+              <ToDoItem
               key={index}
               id={index}
 	      display={displayGender}
