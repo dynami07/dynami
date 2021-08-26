@@ -38,9 +38,8 @@ setItems(prevItems => {
   }
 	
 	
-	let gender=["Male","Female"];
-const [displayGender,setGender]=useState();
-	
+let gender=["Male","Female"];
+const [displayGender,setGender]=useState();	
 const [displayGenderr,setGenderr]=useState();
 
 
