@@ -8,6 +8,9 @@ function InputArea(props) {
     setInputText(newValue);
   }
   
+  let gender=["Male","Female"];
+const [displayGender,setGender]=useState();
+  
   return (
     <div className="form">
     <span>Input Text</span>
@@ -20,8 +23,19 @@ function InputArea(props) {
       >
         <span>Add</span>
       </button>
+  <div>
+		<center>
+		{gender.map(result=>(
+			<>
+			<input type="radio" value={result} name="radiovalues" onChange={(e)=>setGender(e.target.value)}/>
+			<b> {result} </b>
+			</>
+			))}
+			</center>
+	</div>
     </div>
   );
 }
 
 export default InputArea;
+export default displayGender;
