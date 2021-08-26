@@ -2,10 +2,8 @@ import React, { useState } from "react";
 
 function InputArea(props) {
   const [inputText, setInputText] = useState("");
-	  let gender=["Male","Female"];
-const [displayGender,setGender]=useState();
 
-  function handleChange(event) {
+   function handleChange(event) {
     const newValue = event.target.value;
     setInputText(newValue);
   }
@@ -24,16 +22,6 @@ const [displayGender,setGender]=useState();
       >
         <span>Add</span>
       </button>
-  <div>
-		<center>
-		{gender.map(result=>(
-			<>
-			<input type="radio" value={result} name="radiovalues" onChange={(e)=>setGender(e.target.value)}/>
-			<b> {result} </b>
-			</>
-			))}
-			</center>
-	</div>
     </div>
   );
 }
