@@ -2,14 +2,15 @@ import React, { useState } from "react";
 
 function InputArea(props) {
   const [inputText, setInputText] = useState("");
+	  let gender=["Male","Female"];
+const [displayGender,setGender]=useState();
 
   function handleChange(event) {
     const newValue = event.target.value;
     setInputText(newValue);
   }
   
-  let gender=["Male","Female"];
-const [displayGender,setGender]=useState();
+
   
   return (
     <div className="form">
@@ -38,4 +39,3 @@ const [displayGender,setGender]=useState();
 }
 
 export default InputArea;
-export default displayGender;
