@@ -77,7 +77,7 @@ setItems(prevItems => {
 
     <div className="container">
       <InputArea addItem={addItem} />
-      
+    
              
       <div>
          <ul>
@@ -85,8 +85,7 @@ setItems(prevItems => {
               <ToDoItem
               key={index}
               id={index}
-	      display={displayGender}
-              text={todoItem}
+	      text={todoItem}
 	      onChecked={deleteItem}
             />
 	   ))}
