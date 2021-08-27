@@ -44,7 +44,7 @@ setItems(prevItems => {
 const [displayGender,setGender]=useState();
 	
 const [displayGenderr,setGenderr]=useState();
-const [ todo, todolist]  = useState([]);
+
 	
 	
 	return (
