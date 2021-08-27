@@ -10,7 +10,7 @@ const [items, setItems] = useState([]);
 function addItem(inputText) {
 setItems(prevItems => {
   return [...prevItems, { 
-                                   text : inputText,                  gender : displayGender, 
+                            text : inputText,                  gender : displayGender, 
                             genderr : displayGenderr}];
   });
  }  
@@ -44,7 +44,7 @@ setItems(prevItems => {
 const [displayGender,setGender]=useState();
 	
 const [displayGenderr,setGenderr]=useState();
-Const [ todo, todolist]  = useState([]);
+const [ todo, todolist]  = useState([]);
 	
 	
 	return (
