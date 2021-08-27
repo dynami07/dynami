@@ -38,6 +38,13 @@ setItems(prevItems => {
   }
 	
 	
+	let gender=["Male","Female"];
+const [displayGender,setGender]=useState();
+	
+const [displayGenderr,setGenderr]=useState();
+
+	
+	
 	return (
 	  
 	<div className={`App ${colorTheme}`}>
@@ -75,7 +82,30 @@ setItems(prevItems => {
 
     <div className="container">
       <InputArea addItem={addItem} />
-    	     
+    	     <div>
+		<center>
+		{gender.map(result=>(
+			<>
+			<input type="radio" value={result} name="radiovalues" onChange={(e)=>setGender(e.target.value)}/>
+			<b> {result} </b>
+			</>
+			))}
+			</center>
+	</div>
+	
+	<form>
+        <label>
+          Gender: &nbsp;	  
+          <select  onChange={(e)=>setGenderr(e.target.value)}>
+	    <option value="Select Gender">Select</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+        </label>
+   
+      </form>   
+      
+
       <div>
          <ul>
           {items.map((todoItem, index) => (
@@ -83,6 +113,8 @@ setItems(prevItems => {
               key={index}
               id={index}
 	      text={todoItem}
+	       display={displayGender}
+	      show={displayGenderr}
 	       onChecked={deleteItem}
             />
 	   ))}
